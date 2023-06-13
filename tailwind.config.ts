@@ -65,7 +65,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwind-children")],
   variants: {
     extend: {
       display: ["group-hover"],
