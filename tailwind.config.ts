@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { Config } from "tailwindcss";
+
+const config: Config = {
   darkMode: "class",
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -41,23 +42,23 @@ module.exports = {
         },
         fadeOut: {
           "0%": {
-            opacity: 1,
+            opacity: "1",
 
             "-webkit-background-clip": "content-box",
           },
           "100%": {
-            opacity: 0,
+            opacity: "0",
             "-webkit-background-clip": "content-box",
           },
         },
         fadeIn: {
           "0%": {
-            opacity: 0,
+            opacity: "0",
 
             "-webkit-background-clip": "content-box",
           },
           "100%": {
-            opacity: 1,
+            opacity: "1",
             "-webkit-background-clip": "content-box",
           },
         },
@@ -71,3 +72,5 @@ module.exports = {
     },
   },
 };
+
+export default config;
